@@ -1,0 +1,23 @@
+This is a test module to load images from flickr based on a search term entered in the field at the top of the page. 
+
+I have built this very  much as a prototype: the styling is minimally based upon the design provided. It is intended to be responsive (up to a point) but there would be much more I would do to make it fully so.
+
+I began by creating a minimal page to hold the displayed assets (index.html). 
+
+Upon submitting the search form an Ajax request is made to the flickr API and a JSON Object is returned representing the first (in this case) 15 images and the pagination data associated with those.
+
+All the thumbnails are displayed for those images and the first of those is displayed as a large image.  
+
+The pagination controls cause another set of 15 images to be loaded and displayed likewise. 
+
+I have not yet added the functionality to move through the main images contained on the page in a carousel style but this does function by selecting a thumbnail. 
+
+I decided to display the pagination by showing the current page number and the total number of pages, in between the controls to go back/forward one image and to the first/last images. 
+This is in order to reduce the complexity where there are a large number of images returned by that search term.
+
+I decided to display the main image at an explicit size and 'mask out' the excess areas.
+This keeps a constant layout across all different image sizes. 
+
+I began to put in some CSS3 transitions.
+
+I have not yet optimised the images sizes.
